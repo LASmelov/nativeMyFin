@@ -80,7 +80,7 @@ const InsideBlock = () => {
         alignItems: 'center',
         justifyContent: 'space-between',
         marginStart: 10,
-       width: 300,
+       width: 290,
         height: 52,
     
         gap: 10,
