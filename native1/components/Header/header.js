@@ -4,6 +4,7 @@ import { View, TextInput, TouchableOpacity, Image, StyleSheet, Text } from 'reac
 const HeaderBlock = () => {
   return (
     <View style={styles.container}>
+      <View style={styles.inputblock}>
       <TouchableOpacity>
       <Image 
         source={uri ='./components/Header/img/Icon.png'} 
@@ -13,9 +14,9 @@ const HeaderBlock = () => {
 
       <TextInput 
         style={styles.input} 
-        placeholder="Введите текст"
+        placeholder="Поиск заявок"
       />
-
+</View>
       <TouchableOpacity style={styles.button}>
         <Image 
           source={uri ='./components/Header/img/bell-01.png'}
@@ -23,7 +24,7 @@ const HeaderBlock = () => {
         />
       </TouchableOpacity>
 
-      <Text style={styles.name}>Имя</Text>
+      <Text style={styles.name}>Владимир</Text>
       <Image 
         source={uri ='./components/Header/img/Ellipse 212.png'} 
         style={styles.avatar}
@@ -35,8 +36,11 @@ const HeaderBlock = () => {
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
-    ju: 'space-between',
+    justifyContent: 'space-around',
     padding: 10,
+    display:"flex",
+    alignItems:"center",
+    flexWrap: "wrap",
 
 
   },
@@ -45,11 +49,26 @@ const styles = StyleSheet.create({
     height: 24,
   },
   input: {
-
+  color:"#B5B7C0",
     marginLeft: 10,
+    width: 750,
+    outlineStyle: 'none'
+  },
+ 
+
+  inputblock:{
+    flexDirection: 'row',
+    display:"flex",
+    alignItems:"center",
+    justifyContent: 'flex-start',
+    width: 839,
+    height: 48,
+    backgroundColor:"white",
+    paddingLeft: 20,
+    borderRadius: 12,
   },
   button: {
-    marginLeft: 10,
+    margin: 30,
   },
   buttonIcon: {
     width: 24,

@@ -8,7 +8,11 @@ const App = () => {
   return (
     <View style={styles.container1}>
       <InsideBlock style={styles.insideBlock}/>
+      <View style = {styles.headerandmain}>
+
+     
       <HeaderBlock style={styles.headerBlock}/>
+       </View>
     </View>
   );
 }
@@ -20,6 +24,13 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
 
   },
+
+  headerandmain:{
+    display: "flex",
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    flex:3
+  }
 
 })
 
